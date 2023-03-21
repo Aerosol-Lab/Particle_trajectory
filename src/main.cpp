@@ -3,6 +3,7 @@
 
 
 int main(int argc,char *argv[]){
+
 	trajectory *tra = new trajectory( );		// trajectory class is initialized with constractor (see trajectory.cpp)
 	/*particle par;
 	for(par.Mach=0.1;par.Mach<5;par.Mach+=0.02){

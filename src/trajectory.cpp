@@ -28,6 +28,7 @@ trajectory::trajectory(void){
 // generate class
   vars = new Variables(); // generate variables class
   flags = new Flags();    // initialize flags (see flags.hpp)
+  
 
 // initialization
   readCondition();  // read condition file ./particle/condition

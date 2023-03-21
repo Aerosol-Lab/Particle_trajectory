@@ -85,7 +85,7 @@ trajectory::boundAction(int faceID, int pid, point norm){
 			 If the boundary is symmetryPlane, the particle is refrected.
 			 Return value is 1 (continue)
 			*/
-			if(boundaries[i].type=="symmetryPlane"){
+			/*if(boundaries[i].type=="symmetryPlane"){
 				double b0=vars->particles[pid].x.x[0]-points[faces[faceID].iface[0]].x[0];
 				double b1=vars->particles[pid].x.x[1]-points[faces[faceID].iface[0]].x[1];
 				double b2=vars->particles[pid].x.x[2]-points[faces[faceID].iface[0]].x[2];
@@ -112,7 +112,7 @@ trajectory::boundAction(int faceID, int pid, point norm){
 				vars->particles[pid].F.x[1]-=2*nv0*norm.x[1];
 				vars->particles[pid].F.x[2]-=2*nv0*norm.x[2];
 				returnInt=1;
-			}
+			}*/
 			/*
 				If the boundary is wall, the calculation is finished by return -1 (returnInt=-1).
 				Ending information is logged in outParticles array.

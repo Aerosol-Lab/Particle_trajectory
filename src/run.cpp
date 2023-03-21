@@ -61,6 +61,6 @@ trajectory::run(void){
 	outputPenetrate();
 	int totalTrap=0;
 	for(int i=0;i<Nth;i++) totalTrap+=trapParticle[i];
-  cout<<totalTrap<<" might be trapped circulation"<<endl;
+  	cout<<totalTrap<<" might be trapped circulation"<<endl;
 	cout<<"Trajectory calculation time: "<<omp_get_wtime()-timer<<" sec"<<endl;
 }
