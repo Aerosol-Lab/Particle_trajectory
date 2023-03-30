@@ -1,7 +1,7 @@
 #pragma once
-#include "functions.hpp"
-#include "variables.hpp"
-#include "flags.hpp"
+#include "../functions.hpp"
+#include "../variables.hpp"
+#include "../flags.hpp"
 
 
 

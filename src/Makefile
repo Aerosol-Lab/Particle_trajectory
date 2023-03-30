@@ -1,6 +1,6 @@
 #NAME        = ../../../pipe/trajectory.out
 NAME        = ./trajectory.out
-SRCS        = ./*cpp
+SRCS        = ./*cpp ./*/*cpp
 OBJS        = $(SRCS:.cpp=.o)
 CXX         = g++
 CXXFLAGS    = -std=c++11 -fopenmp

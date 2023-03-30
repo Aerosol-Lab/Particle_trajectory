@@ -38,11 +38,11 @@ trajectory::euler(particle &a){
 	for(int i=0; i<3; i++) a.v.x[i]+=timeStep*a.F.x[i];
 	for(int i=0; i<3; i++) a.x.x[i]+=timeStep*a.v.x[i];
 
-  if(a.x.x[plane2D]<Axis && flags->dimensionFlag>0) {
-	  a.x.x[plane2D]=2*Axis-a.x.x[plane2D];
-	  a.v.x[plane2D]*=-1.0;
-	  a.F.x[plane2D]*=-1.0;
-	  a.reflect*=-1;
+  	if(a.x.x[plane2D]<Axis && flags->dimensionFlag>0) {
+		a.x.x[plane2D]=2*Axis-a.x.x[plane2D];
+		a.v.x[plane2D]*=-1.0;
+		a.F.x[plane2D]*=-1.0;
+		a.reflect*=-1;
 	}
 	a.tini-=timeStep;
 	return timeStep;

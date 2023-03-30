@@ -1,7 +1,5 @@
 #pragma once
-#include "dragForce.hpp"
-#include "variables.hpp"
-#include "flags.hpp"
+#include "forces/dragForce.hpp"
 
 class trajectory{
 	public:
@@ -93,8 +91,8 @@ class trajectory{
 			}
 	}
 
-		trajectory(void);
-		~trajectory(void);
+	trajectory(void);
+	~trajectory(void);
 
 	private:
 };

@@ -1,6 +1,6 @@
 #include "trajectory.hpp"
 
-//  Check particle stay current cell or move to next cell or hit to boundary
+//  Check if particle stay current cell or move to next cell or hit to boundary
 int
 trajectory::checkCell(int pid){
 	int escapeFlag=0;  // 0:continue, -1:out from bound, 1:move to next cell
@@ -27,12 +27,12 @@ trajectory::checkCell(int pid){
 			point c=cells[icell].norm[i];
 			double inProduct=c.x[0]*x+c.x[1]*y+c.x[2]*z;
 			// if hit face is the boundary face:
-	    if(b>boundaryStartID-1)	{
+	    	if(b>boundaryStartID-1)	{
 				if(inProduct<vars->particles[pid].dp*0.5){
-		      loopFlag=boundAction(b,pid,c); // 0:continue, -1:out from bound, 1:move to next cell
+				loopFlag=boundAction(b,pid,c); // 0:continue, -1:out from bound, 1:move to next cell
 			    if(loopFlag<0) break;
-		    }
-  		}
+		    	}
+  			}
 			// if hit face is "not" boundary face:
 			else{
 				if(inProduct<0){

@@ -42,7 +42,7 @@ double
 dragForceSingh::computeCd(particle &par){
 	double Ts_T, Us_U, Ms, alpha, C1, Br, fKnWr;
 	double Cdfm=0;
-  if(par.Mach<1){
+  	if(par.Mach<1){
 		Ts_T=1;
 		Us_U=1;
 		Ms=par.Mach;

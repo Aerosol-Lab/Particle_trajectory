@@ -4,7 +4,7 @@
 class Variables {
 	private:
 		int Nth;
-  public:
+  	public:
 		std::vector<double> p;
 		std::vector<point> U;
 		std::vector<double> T;
